@@ -41,7 +41,7 @@ def updateLogic():
         if rectangle.right == width:
             moveRect1()
             rectangle2.right = 0
-        elif rectangle.left <= width:
+        elif rectangle.left <= width+1:
             moveRect1()
             moveRect2()
         elif rectangle2.right < width:
