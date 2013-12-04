@@ -1,57 +1,31 @@
-import sys, pygame
+import sys, pygame, paddle
 from pygame.constants import *
 
 pygame.init()
-
+pygame.key.set_repeat(1,1)
 size = width, height = 800, 600
 black = 0,0,0
 stop = False
 
 screen = pygame.display.set_mode(size)
-rectangle = pygame.Rect(0,50,100,100)
-rectangle2 = pygame.Rect(width,50,100,100)
-
-def setStop(bool):
-    global stop
-    stop = bool
-
-def moveRect1():
-    rectangle.left +=1
-
-def moveRect2():
-    rectangle2.left +=1
+player1 = paddle.Paddle(5,375)
+player2 = paddle.Paddle(770,375)
 
 def drawScreen():
-    screen.fill(pygame.Color(255,0,0,255))
-    pygame.draw.rect(screen,black,rectangle,5)
-    pygame.draw.rect(screen,black,rectangle2,0)
+    screen.fill(black)
+    player1.draw(screen)
+    player2.draw(screen)
     pygame.display.flip()
 
 def updateLogic():
     for event in pygame.event.get():
         if event.type == pygame.QUIT: sys.exit()
         elif event.type == pygame.KEYDOWN:
-            if event.key == K_SPACE:
-                setStop(True)
-        elif event.type == pygame.KEYUP:
-            if event.key == K_SPACE:
-                setStop(False)
+            if event.key == K_UP and player1.img.top>=0 :
+                player1.moveUp()
+            elif event.key == K_DOWN and player1.img.bottom<=height :
+                player1.moveDown()
 
-    if stop == False:
-        if rectangle.right == width:
-            moveRect1()
-            rectangle2.right = 0
-        elif rectangle.left <= width+1:
-            moveRect1()
-            moveRect2()
-        elif rectangle2.right < width:
-            moveRect2()
-        elif rectangle2.right == width:
-            moveRect2()
-            rectangle.right = 0
-        else:
-            moveRect2()
-            moveRect1()
 
 while 1:
         drawScreen()
