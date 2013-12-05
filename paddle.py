@@ -9,7 +9,7 @@ class Paddle(object):
         self.y = y
         self.height = 75
         self.width = 25
-        self.color = 250,250,250
+        self.color = 255,255,255
 
     def moveDown(self):
         self.y += 1
