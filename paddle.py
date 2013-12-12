@@ -17,6 +17,9 @@ class Paddle(object):
     def moveUp(self):
         self.y -= 1
 
+    def setPosition(self,x,y):
+        self.x, self.y = x, y
+
     def draw(self,screen):
         self.img = pygame.Rect(self.x,self.y,self.width,self.height)
         pygame.draw.rect(screen,self.color,self.img)

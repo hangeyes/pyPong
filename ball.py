@@ -9,10 +9,11 @@ class Ball(object):
         self.width = self.height = 20
         self.color = 150,150,150
         self.direction = {"vertical":0,"horizontal":-1}
+        self.speed = 1
 
     def move(self):
-        self.x += self.direction["horizontal"]
-        self.y += self.direction["vertical"]
+        self.x += self.direction["horizontal"]*self.speed
+        self.y += self.direction["vertical"]*self.speed
 
     def bounce(self,dir):
         if dir["h"] == 1:
@@ -24,6 +25,9 @@ class Ball(object):
             if self.direction["vertical"] > -1:
                 self.direction["vertical"] -= 1
 
+
+    def setPosition(self,x,y):
+        self.x, self.y = x, y
 
     def draw(self,screen):
         self.img = pygame.Rect(self.x,self.y,self.width,self.height)
