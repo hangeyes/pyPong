@@ -26,8 +26,10 @@
       <file leaf-file-name="main.py" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/main.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="16" column="36" selection-start="392" selection-end="392" vertical-scroll-proportion="0.65384614" vertical-offset="0" max-vertical-offset="1717">
-              <folding />
+            <state line="27" column="35" selection-start="623" selection-end="623" vertical-scroll-proportion="0.36923078" vertical-offset="315" max-vertical-offset="1887">
+              <folding>
+                <element signature="e#0#32#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -35,7 +37,7 @@
       <file leaf-file-name="pydevd.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$APPLICATION_HOME_DIR$/helpers/pydev/pydevd.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="1531" column="0" selection-start="60412" selection-end="60412" vertical-scroll-proportion="0.0" vertical-offset="24695" max-vertical-offset="25024">
+            <state line="1531" column="0" selection-start="60412" selection-end="60412" vertical-scroll-proportion="0.0" vertical-offset="26027" max-vertical-offset="26146">
               <folding />
             </state>
           </provider>
@@ -44,7 +46,7 @@
       <file leaf-file-name="paddle.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/paddle.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="20" column="29" selection-start="328" selection-end="384" vertical-scroll-proportion="0.0" vertical-offset="102" max-vertical-offset="561">
+            <state line="24" column="52" selection-start="534" selection-end="534" vertical-scroll-proportion="0.0" vertical-offset="51" max-vertical-offset="561">
               <folding />
             </state>
           </provider>
@@ -54,9 +56,7 @@
         <entry file="file://$PROJECT_DIR$/ball.py">
           <provider selected="true" editor-type-id="text-editor">
             <state line="30" column="0" selection-start="861" selection-end="861" vertical-scroll-proportion="0.0" vertical-offset="273" max-vertical-offset="765">
-              <folding>
-                <element signature="e#0#21#0" expanded="true" />
-              </folding>
+              <folding />
             </state>
           </provider>
         </entry>
@@ -73,6 +73,7 @@
       <list>
         <option value="$PROJECT_DIR$/paddle.py" />
         <option value="$PROJECT_DIR$/ball.py" />
+        <option value="$PROJECT_DIR$/ai.py" />
         <option value="$PROJECT_DIR$/main.py" />
       </list>
     </option>
@@ -368,8 +369,8 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="7" />
-    <editor active="true" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <editor active="false" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -379,7 +380,7 @@
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39869282" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32843137" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32026145" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32026145" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -404,17 +405,12 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/paddle.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="24" selection-start="177" selection-end="177" vertical-scroll-proportion="0.0" vertical-offset="17" max-vertical-offset="527">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/main.py">
       <provider selected="true" editor-type-id="text-editor">
         <state line="16" column="0" selection-start="298" selection-end="298" vertical-scroll-proportion="0.0" vertical-offset="510" max-vertical-offset="1088">
-          <folding />
+          <folding>
+            <element signature="e#0#32#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -441,7 +437,9 @@
     <entry file="file://$PROJECT_DIR$/main.py">
       <provider selected="true" editor-type-id="text-editor">
         <state line="7" column="0" selection-start="120" selection-end="120" vertical-scroll-proportion="0.0" vertical-offset="119" max-vertical-offset="323">
-          <folding />
+          <folding>
+            <element signature="e#0#32#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -477,26 +475,26 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/paddle.py">
+    <entry file="file://$PROJECT_DIR$/ball.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="29" selection-start="328" selection-end="384" vertical-scroll-proportion="0.0" vertical-offset="102" max-vertical-offset="561">
+        <state line="30" column="0" selection-start="861" selection-end="861" vertical-scroll-proportion="0.0" vertical-offset="273" max-vertical-offset="765">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ball.py">
+    <entry file="file://$PROJECT_DIR$/paddle.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="30" column="0" selection-start="861" selection-end="861" vertical-scroll-proportion="0.0" vertical-offset="273" max-vertical-offset="765">
-          <folding>
-            <element signature="e#0#21#0" expanded="true" />
-          </folding>
+        <state line="24" column="52" selection-start="534" selection-end="534" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="561">
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/main.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="36" selection-start="392" selection-end="392" vertical-scroll-proportion="0.65384614" vertical-offset="0" max-vertical-offset="1717">
-          <folding />
+        <state line="27" column="35" selection-start="623" selection-end="623" vertical-scroll-proportion="0.36923078" vertical-offset="315" max-vertical-offset="1887">
+          <folding>
+            <element signature="e#0#32#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

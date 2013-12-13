@@ -24,6 +24,14 @@ def drawScreen():
     ball1.draw(screen)
     pygame.display.flip()
 
+def ai():
+    if ball1.img.centerx > width*0.7:
+        if player2.img.centery > ball1.img.centery and player2.img.top > 0:
+            player2.moveUp()
+        elif player2.img.centery < ball1.img.centery and player2.img.bottom < height:
+            player2.moveDown()
+
+
 def detectCollision():
 
     bounced = False
@@ -81,6 +89,7 @@ def updateLogic():
     score = 0
 
     player1Control()
+    ai()
     bounced, dir = detectCollision()
 
     if bounced:
